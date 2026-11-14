@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=84.2.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blockchain-verifiable-signal"
+version = "0.1.0"
+description = "Step 1: fixed BTC/ETH data, pinned Chronos inference, and reproducible signals."
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+  "chronos-forecasting==2.3.2",
+  "huggingface-hub==2.4.0",
+  "numpy==2.4.6",
+  "pandas==3.1.1",
+  "PyYAML==6.0.3",
+  "requests==2.34.2",
+  "torch==2.15.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==9.2.0"]
+
+[project.scripts]
+signal-pipeline = "signal_pipeline.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+pythonpath = ["src"]

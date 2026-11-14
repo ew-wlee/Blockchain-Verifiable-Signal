@@ -1,0 +1,40 @@
+schema_version: step1-input-v1
+
+data:
+  source: Binance Spot
+  endpoints:
+    - https://data-api.binance.vision
+    - https://api.binance.com
+  symbols:
+    - BTCUSDT
+    - ETHUSDT
+  interval: 1h
+  timezone: UTC
+  window_start_utc: "2024-01-01T00:00:00Z"
+  window_end_utc: "2025-01-01T00:00:00Z"
+  validation:
+    start_utc: "2024-07-01T00:00:00Z"
+    end_utc: "2024-10-01T00:00:00Z"
+  test:
+    start_utc: "2024-10-01T00:00:00Z"
+    end_utc: "2025-01-01T00:00:00Z"
+  raw_cache_dir: data/raw
+
+model:
+  id: amazon/chronos-t5-small
+  revision: null
+  snapshot_root: .cache/huggingface
+  device: cpu
+  dtype: float32
+  context_length: 64
+  prediction_length: 1
+  batch_size: 64
+  num_samples: 20
+  temperature: 1.0
+  top_k: 50
+  top_p: 1.0
+  seed: 20261114
+
+signals:
+  tau_rule: median_abs_validation_predicted_return
+  tau_decimals: 12
