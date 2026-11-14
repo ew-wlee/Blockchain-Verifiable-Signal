@@ -6,6 +6,11 @@ __pycache__/
 .DS_Store
 .env
 
+# Node / Hardhat generated files
+node_modules/
+build/
+typechain-types/
+
 # Large, reproducible inputs are deliberately excluded from Git.
 data/raw/
 .cache/
