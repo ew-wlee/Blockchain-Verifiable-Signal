@@ -1,4 +1,4 @@
-"""Command-line orchestration for the frozen Step 1 pipeline."""
+"""Command-line orchestration for the frozen Step 1 and Step 2 pipelines."""
 
 from __future__ import annotations
 
@@ -50,6 +50,13 @@ from .signals import (
     freeze_tau,
     generate_signals,
     signal_counts,
+)
+from .step2 import (
+    build_step2,
+    load_step2_config,
+    reproduce_step2,
+    status_step2,
+    verify_step2,
 )
 from .validation import (
     DETERMINISTIC_ARTIFACTS,
@@ -448,7 +455,13 @@ def _build_parser() -> argparse.ArgumentParser:
         "--config",
         type=Path,
         default=Path("configs/step1.yaml"),
-        help="fixed input YAML (default: configs/step1.yaml)",
+        help="fixed Step 1 input YAML (default: configs/step1.yaml)",
+    )
+    parser.add_argument(
+        "--step2-config",
+        type=Path,
+        default=Path("configs/step2.yaml"),
+        help="fixed Step 2 input YAML (default: configs/step2.yaml)",
     )
     parser.add_argument(
         "--http-timeout",
@@ -474,6 +487,21 @@ def _build_parser() -> argparse.ArgumentParser:
         help="re-run offline into artifacts/replay/step1 and compare every byte hash",
     )
     subparsers.add_parser("verify", help="verify the formal artifact hash manifest")
+    subparsers.add_parser(
+        "step2-build",
+        help="freeze Step 1 inputs, run the backtest, and build the six-file bundle",
+    )
+    subparsers.add_parser(
+        "step2-verify",
+        help="run positive, negative-matrix, and second-environment bundle checks",
+    )
+    subparsers.add_parser(
+        "step2-reproduce",
+        help="rebuild in artifacts/replay/step2, compare bytes, and freeze the bundle",
+    )
+    subparsers.add_parser(
+        "step2-status", help="read the Step 2 status without modifying artifacts"
+    )
     return parser
 
 
@@ -486,27 +514,41 @@ def main(argv: list[str] | None = None) -> int:
     parser = _build_parser()
     args = parser.parse_args(argv)
     try:
-        config = load_config(args.config)
-        if args.command == "prepare-data":
-            result = prepare_only(
-                config,
-                offline=args.offline,
-                http_timeout=args.http_timeout,
-            )
-        elif args.command == "run":
-            result = generate_pipeline(
-                config,
-                _artifact_root(config),
-                offline=args.offline,
-                http_timeout=args.http_timeout,
-            )
-        elif args.command == "reproduce":
-            result = reproduce(config, http_timeout=args.http_timeout)
-        elif args.command == "verify":
-            result = verify(config)
-        else:  # pragma: no cover - argparse enforces choices
-            parser.error(f"unknown command: {args.command}")
-            return 2
+        if args.command.startswith("step2-"):
+            step2_config = load_step2_config(args.step2_config)
+            if args.command == "step2-build":
+                result = build_step2(step2_config)
+            elif args.command == "step2-verify":
+                result = verify_step2(step2_config)
+            elif args.command == "step2-reproduce":
+                result = reproduce_step2(step2_config)
+            elif args.command == "step2-status":
+                result = status_step2(step2_config)
+            else:  # pragma: no cover - argparse enforces choices
+                parser.error(f"unknown command: {args.command}")
+                return 2
+        else:
+            config = load_config(args.config)
+            if args.command == "prepare-data":
+                result = prepare_only(
+                    config,
+                    offline=args.offline,
+                    http_timeout=args.http_timeout,
+                )
+            elif args.command == "run":
+                result = generate_pipeline(
+                    config,
+                    _artifact_root(config),
+                    offline=args.offline,
+                    http_timeout=args.http_timeout,
+                )
+            elif args.command == "reproduce":
+                result = reproduce(config, http_timeout=args.http_timeout)
+            elif args.command == "verify":
+                result = verify(config)
+            else:  # pragma: no cover - argparse enforces choices
+                parser.error(f"unknown command: {args.command}")
+                return 2
         print(json.dumps(result, indent=2, sort_keys=True, ensure_ascii=False))
         if args.command == "verify" and (
             not result["artifact_hashes_passed"] or not result["validation_passed"]
