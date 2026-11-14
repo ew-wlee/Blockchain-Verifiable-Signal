@@ -1,10 +1,13 @@
 from __future__ import annotations
 
+import shutil
+from dataclasses import replace
 from pathlib import Path
 
 import pytest
 
 from signal_pipeline.step2 import (
+    Step2Error,
     load_step2_config,
     status_step2,
     verify_step1_inputs,
@@ -52,3 +55,17 @@ def test_status_is_read_only_when_absent():
     result = status_step2(config)
     assert result["step2_completed"] is False
     assert result["bundle_frozen"] is False
+
+
+@pytest.mark.skipif(
+    not (STEP1_ROOT / "artifact_hashes.json").is_file(),
+    reason="requires the locally generated Step 1 artifacts",
+)
+def test_step1_input_drift_is_blocked(tmp_path):
+    config = load_step2_config(PROJECT_ROOT / "configs" / "step2.yaml")
+    copied = tmp_path / "step1"
+    shutil.copytree(STEP1_ROOT, copied)
+    with (copied / "dataset.csv").open("ab") as handle:
+        handle.write(b"tampered\n")
+    with pytest.raises(Step2Error, match="Step 1 artifact hashes are invalid"):
+        verify_step1_inputs(replace(config, step1_root=copied))
