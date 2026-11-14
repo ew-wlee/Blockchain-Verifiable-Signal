@@ -1,0 +1,20 @@
+schema_version: step2-input-v1
+
+step1:
+  artifacts_dir: artifacts/step1
+
+output:
+  root: artifacts/step2
+  bundle_dir: artifacts/step2/bundle
+  evidence_dir: artifacts/step2/evidence
+  reports_dir: artifacts/step2/reports
+
+backtest:
+  fee_bps: 10
+  initial_position: 0
+  long_only: true
+  execution: same_bar_open_to_close
+  splits_independent: true
+
+bundle:
+  schema_version: verifiable-signal-bundle-v1
