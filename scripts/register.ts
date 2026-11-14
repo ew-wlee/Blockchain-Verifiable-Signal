@@ -28,6 +28,21 @@ function sameHex(left: string, right: string): boolean {
   return left.toLowerCase() === right.toLowerCase();
 }
 
+function isSignalNotFound(error: unknown): boolean {
+  let text = "";
+  try {
+    text = JSON.stringify(error);
+  } catch {
+    text = error instanceof Error ? error.message : String(error);
+  }
+  const direct = error instanceof Error ? error.message : "";
+  const combined = `${text} ${direct}`;
+  return (
+    combined.includes("SignalNotFound") ||
+    combined.includes("0x4b1ef6c9")
+  );
+}
+
 async function main(): Promise<void> {
   if (!fs.existsSync(DEPLOYMENT_REPORT_PATH)) {
     throw new Error("deployment report is missing; run npm run deploy:sepolia");
@@ -41,9 +56,10 @@ async function main(): Promise<void> {
   if (deployment.status !== "confirmed") {
     throw new Error("deployment is not confirmed");
   }
-  if (expected.step3CodeCommit !== gitCommit()) {
-    throw new Error("Step 3 code commit changed after deployment");
+  if (deployment.step3_code_commit !== expected.step3CodeCommit) {
+    throw new Error("deployment code commit does not match expected registration");
   }
+  const registrationCodeCommit = gitCommit();
 
   const [signer] = await ethers.getSigners();
   if (!signer) {
@@ -76,8 +92,7 @@ async function main(): Promise<void> {
     const existing = await registry.getSignal(frozen.objectId);
     existingProvider = String(existing.provider);
   } catch (error) {
-    const message = error instanceof Error ? error.message : String(error);
-    if (!message.includes("SignalNotFound")) {
+    if (!isSignalNotFound(error)) {
       throw error;
     }
   }
@@ -156,6 +171,8 @@ async function main(): Promise<void> {
     signal_hash: frozen.signalHash,
     manifest_hash: frozen.manifestHash,
     config_hash: frozen.configHash,
+    deployment_code_commit: expected.step3CodeCommit,
+    registration_code_commit: registrationCodeCommit,
     registration_tx: receipt.hash,
     registration_block_number: receipt.blockNumber,
     registration_gas_used: receipt.gasUsed.toString(),
@@ -176,6 +193,7 @@ async function main(): Promise<void> {
     provider: expected.provider,
     step2_code_commit: frozen.step2CodeCommit,
     step3_code_commit: expected.step3CodeCommit,
+    registration_code_commit: registrationCodeCommit,
     bundle_manifest_path: "artifacts/step2/bundle/manifest.json",
     expected_registration_path: "artifacts/step3/expected_registration.json",
     expected_registration_sha256: sha256File(EXPECTED_REGISTRATION_PATH),

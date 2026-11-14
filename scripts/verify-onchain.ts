@@ -153,8 +153,13 @@ async function main(): Promise<void> {
     sameHex(String(deployment.config_hash), frozen.configHash)
   );
   addCheck(
-    "step3_code_commit_matches",
+    "deployment_code_commit_matches",
     String(deployment.step3_code_commit) === expected.step3CodeCommit
+  );
+  addCheck(
+    "registration_code_commit_matches",
+    String(registration.registration_code_commit) ===
+      String(deployment.registration_code_commit)
   );
   addCheck(
     "registration_report_matches",
@@ -237,6 +242,7 @@ async function main(): Promise<void> {
     step1_code_commit: frozen.step1CodeCommit,
     step2_code_commit: frozen.step2CodeCommit,
     step3_code_commit: expected.step3CodeCommit,
+    registration_code_commit: String(deployment.registration_code_commit),
     config_hash: frozen.configHash,
     dataset_hash: frozen.dataHash,
     model_hash: frozen.modelHash,
@@ -273,7 +279,8 @@ async function main(): Promise<void> {
     handoff_pending: true,
     external_handoff_acknowledgement: false,
     branch: gitBranch(),
-    code_commit: expected.step3CodeCommit,
+    code_commit: String(deployment.registration_code_commit),
+    deployment_code_commit: expected.step3CodeCommit,
     step2_code_commit: frozen.step2CodeCommit,
     object_id: frozen.objectId,
     contract_address: contractAddress,
