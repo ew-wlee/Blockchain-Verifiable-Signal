@@ -1,0 +1,8 @@
+{
+  "backend": "Agg",
+  "matplotlib": "3.10.9",
+  "note": "Plot rendering uses the preinstalled approved Matplotlib environment because Windows application control blocks newly downloaded NumPy DLLs. Experiments and statistics use Python 3.12.14; no simulation is run by the renderer.",
+  "numpy": "2.2.6",
+  "python": "3.10.14",
+  "summary_sha256": "5860f0935d27a5c7eb125c057260119d6c55cfec9e0791f2d410a7cb7cec0dbf"
+}

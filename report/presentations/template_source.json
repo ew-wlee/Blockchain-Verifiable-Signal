@@ -1,0 +1,31 @@
+{
+  "dimensions_emu": [
+    20105688,
+    11309350
+  ],
+  "final_package_renders_identical_to_reviewed_renders": true,
+  "midterm_structure": [
+    "Project and system overview",
+    "Offline recovery demo",
+    "Recovery and acceptance chart",
+    "Communication chart and conclusion"
+  ],
+  "original_template_unchanged": true,
+  "retained_elements": [
+    "Original used masters and layouts",
+    "Campus photographs and crops",
+    "HKUST cover logo",
+    "Arial typography",
+    "Green titles and beige backgrounds"
+  ],
+  "schema_version": "member3-presentation-template-v1",
+  "source_bytes": 73689269,
+  "source_name": "PPT_template_14.potx",
+  "source_sha256": "101c53b73948c1906258c1a0125be86960d0602efdcc72a45c7ef8de65a62921",
+  "template_imported": true,
+  "unused_layouts_and_media_removed": true,
+  "used_layouts": {
+    "final": 4,
+    "midterm": 2
+  }
+}

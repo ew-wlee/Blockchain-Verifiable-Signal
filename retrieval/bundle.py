@@ -20,6 +20,7 @@ def pack_bundle(directory):
     with zipfile.ZipFile(out, 'w', compression=zipfile.ZIP_STORED) as archive:
         for name in BUNDLE_FILES:
             info = zipfile.ZipInfo(name, date_time=(1980, 1, 1, 0, 0, 0))
+            info.create_system = 3  # Preserve the published Unix ZIP bytes on Windows too.
             info.external_attr = 0o100644 << 16
             archive.writestr(info, (directory / name).read_bytes())
     data = out.getvalue()

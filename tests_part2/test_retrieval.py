@@ -62,6 +62,18 @@ class RetrievalTests(unittest.TestCase):
                 self.assertEqual(data, self.payload)
                 self.assertEqual(result['reconstructed_manifest_hash'], self.anchor['manifest_hash'])
 
+    def test_transport_hash_matches_published_across_platforms(self):
+        from retrieval.bundle import digest
+        from zipfile import ZipInfo
+        expected = json.loads((ROOT / 'artifacts/part2/handoff.json').read_text())['payload_sha256']
+        for platform in (0, 3):
+            class PlatformZipInfo(ZipInfo):
+                def __init__(self, *args, **kwargs):
+                    super().__init__(*args, **kwargs)
+                    self.create_system = platform
+            with patch('retrieval.bundle.zipfile.ZipInfo', PlatformZipInfo):
+                self.assertEqual(digest(pack_bundle(ROOT / 'artifacts/step2/bundle')), expected)
+
     def test_insufficient_and_duplicate(self):
         responses = self.responses(indices=[0, 1])
         responses += [responses[0]] * 5

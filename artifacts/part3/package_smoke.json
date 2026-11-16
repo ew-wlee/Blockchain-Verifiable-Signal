@@ -1,0 +1,19 @@
+{
+  "clean_extraction": true,
+  "commands": [
+    {
+      "command": "python -B -m evaluation.analyze --source artifacts/part3/formal --output artifacts/replay/package-analysis",
+      "returncode": 0
+    },
+    {
+      "command": "python -B -m evaluation.smoke --output artifacts/replay/package-smoke.json",
+      "returncode": 0
+    }
+  ],
+  "current_template_decks_match": true,
+  "package_files_verified": 76,
+  "package_sha256": "429bb264031b14c9762acce720ba213cd52d4c3447211c35b9bb5bbfc5fa9c48",
+  "packaged_smoke_rounds_per_run": 36,
+  "passed": true,
+  "schema_version": "member3-template-package-smoke-v1"
+}

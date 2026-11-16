@@ -1,0 +1,20 @@
+{
+  "accepted_not_recovered": 0,
+  "configurations": 6,
+  "corrupted_data_acceptance_count": 0,
+  "failure_reasons": {
+    "deadline": 566,
+    "insufficient_valid_fragments": 3996
+  },
+  "passed": true,
+  "published_totals_crosschecked": false,
+  "recovered_not_accepted": 0,
+  "rounds_per_seed": 100,
+  "rows": 18000,
+  "run_id": "member3-formal",
+  "seeds_per_configuration": 30,
+  "source_checksums_verified": 2,
+  "source_csv_sha256": "38e60c9451a7f9575703a091b95ae6d5aa9e730a2f424fc673017ad12a6337c9",
+  "storage_overhead": 2,
+  "unique_rounds": 18000
+}

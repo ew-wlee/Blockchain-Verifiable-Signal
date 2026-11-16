@@ -1,0 +1,15 @@
+test_checksums_and_overwrite_protection (test_evaluation.ArtifactTests.test_checksums_and_overwrite_protection) ... ok
+test_duplicate_or_missing_round_rejected (test_evaluation.AuditTests.test_duplicate_or_missing_round_rejected) ... ok
+test_real_records_pass (test_evaluation.AuditTests.test_real_records_pass) ... ok
+test_recovery_before_deadline_but_acceptance_after_deadline (test_evaluation.AuditTests.test_recovery_before_deadline_but_acceptance_after_deadline) ... ok
+test_safety_accounting_and_fairness_mutations_rejected (test_evaluation.AuditTests.test_safety_accounting_and_fairness_mutations_rejected) ... ok
+test_strict_csv_boolean_and_nan_rejected (test_evaluation.AuditTests.test_strict_csv_boolean_and_nan_rejected) ... ok
+test_only_subpicosecond_completion_tail_differences_are_allowed (test_evaluation.ReplayTests.test_only_subpicosecond_completion_tail_differences_are_allowed) ... ok
+test_plot_edits_preserve_run_provenance_but_engine_edits_do_not (test_evaluation.ReplayTests.test_plot_edits_preserve_run_provenance_but_engine_edits_do_not) ... ok
+test_aggregate_weights_seeds_and_includes_failed_attempt_bytes (test_evaluation.StatisticsTests.test_aggregate_weights_seeds_and_includes_failed_attempt_bytes) ... ok
+test_student_t_interval_uses_seed_sample_size (test_evaluation.StatisticsTests.test_student_t_interval_uses_seed_sample_size) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.654s
+
+OK

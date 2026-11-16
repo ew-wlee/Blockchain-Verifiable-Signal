@@ -1,0 +1,25 @@
+run_id,config_id,metric,mean,ci_low,ci_high,seed_count,round_count,ci_method
+member3-formal,default-replication-1-2,recovery_probability,0.955,0.9456584107626897,0.9643415892373102,30,3000,Student t over seed means; 95%; untruncated
+member3-formal,default-replication-1-2,acceptance_probability,0.955,0.9456584107626897,0.9643415892373102,30,3000,Student t over seed means; 95%; untruncated
+member3-formal,default-replication-1-2,communication_bytes,3589139.1333333333,3543311.5062339683,3634966.7604326983,30,3000,Student t over seed means; 95%; untruncated
+member3-formal,default-replication-1-2,completion_time_ms,47.18029548720095,46.266380373962605,48.0942106004393,30,3000,Student t over seed means; 95%; untruncated
+member3-formal,default-rs-2-4,recovery_probability,0.9766666666666667,0.9699917749808372,0.9833415583524961,30,3000,Student t over seed means; 95%; untruncated
+member3-formal,default-rs-2-4,acceptance_probability,0.9766666666666667,0.9699917749808372,0.9833415583524961,30,3000,Student t over seed means; 95%; untruncated
+member3-formal,default-rs-2-4,communication_bytes,3673284.4693333334,3649359.204398955,3697209.7342677116,30,3000,Student t over seed means; 95%; untruncated
+member3-formal,default-rs-2-4,completion_time_ms,53.21806859871076,52.5422845866487,53.89385261077282,30,3000,Student t over seed means; 95%; untruncated
+member3-formal,default-rs-3-6,recovery_probability,0.9846666666666667,0.9798894293129053,0.989443904020428,30,3000,Student t over seed means; 95%; untruncated
+member3-formal,default-rs-3-6,acceptance_probability,0.9846666666666667,0.9798894293129053,0.989443904020428,30,3000,Student t over seed means; 95%; untruncated
+member3-formal,default-rs-3-6,communication_bytes,3699747.619,3675152.0246698787,3724343.2133301212,30,3000,Student t over seed means; 95%; untruncated
+member3-formal,default-rs-3-6,completion_time_ms,55.83574962420109,55.087265200855185,56.584234047547,30,3000,Student t over seed means; 95%; untruncated
+member3-formal,stress-replication-1-2,recovery_probability,0.6276666666666667,0.6127084407438887,0.6426248925894447,30,3000,Student t over seed means; 95%; untruncated
+member3-formal,stress-replication-1-2,acceptance_probability,0.6276666666666667,0.6127084407438887,0.6426248925894447,30,3000,Student t over seed means; 95%; untruncated
+member3-formal,stress-replication-1-2,communication_bytes,3640945.275,3563030.166341888,3718860.383658112,30,3000,Student t over seed means; 95%; untruncated
+member3-formal,stress-replication-1-2,completion_time_ms,101.22467485327164,99.16382371187716,103.28552599466612,30,3000,Student t over seed means; 95%; untruncated
+member3-formal,stress-rs-2-4,recovery_probability,0.5116666666666667,0.493529752082752,0.5298035812505815,30,3000,Student t over seed means; 95%; untruncated
+member3-formal,stress-rs-2-4,acceptance_probability,0.5116666666666667,0.493529752082752,0.5298035812505815,30,3000,Student t over seed means; 95%; untruncated
+member3-formal,stress-rs-2-4,communication_bytes,3960437.44,3912674.4390070164,4008200.4409929835,30,3000,Student t over seed means; 95%; untruncated
+member3-formal,stress-rs-2-4,completion_time_ms,121.94571550066982,119.02617345372418,124.86525754761546,30,3000,Student t over seed means; 95%; untruncated
+member3-formal,stress-rs-3-6,recovery_probability,0.4236666666666667,0.406527440472437,0.4408058928608964,30,3000,Student t over seed means; 95%; untruncated
+member3-formal,stress-rs-3-6,acceptance_probability,0.4236666666666667,0.406527440472437,0.4408058928608964,30,3000,Student t over seed means; 95%; untruncated
+member3-formal,stress-rs-3-6,communication_bytes,4116443.857,4074070.8625085265,4158816.851491473,30,3000,Student t over seed means; 95%; untruncated
+member3-formal,stress-rs-3-6,completion_time_ms,136.30715871987735,133.77081314962228,138.84350429013242,30,3000,Student t over seed means; 95%; untruncated

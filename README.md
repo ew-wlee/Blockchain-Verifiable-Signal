@@ -29,9 +29,37 @@ python3 -m demo.run --scenario success --recover-to /tmp/recovered-signal-bundle
 | Component | Status and evidence |
 |---|---|
 | Member 1 application and registry | Frozen six-file bundle and Sepolia deployment/registration records are included. Local hashes, signals, backtest and a read-only registration receipt/event query were independently checked; see [review](report/03-member1-review.md). |
-| Member 2 retrieval | Implemented; 13 test groups, all 26 minimum-threshold real-bundle subsets, 819 node-state assignments and 16 additional integrity/boundary checks pass. |
+| Member 2 retrieval | Implemented; 14 current test groups including a cross-platform envelope regression. Historical evidence also covers all 26 minimum-threshold real-bundle subsets, 819 node-state assignments and 16 additional integrity/boundary checks. |
 | Full retrieval matrix | Six configurations × 30 seeds × 100 rounds = 18,000 rounds. Actual replay filled every required round field; pre-existing values remained exactly identical. |
-| Member 3 evaluation | Full round records and seed totals are available. Seed-level 95% confidence intervals, the final figures and report interpretation remain to be completed. |
+| Member 3 evaluation | Complete runner, independent 18,000-round execution, full-record replay comparison, seed-level 95% confidence intervals, two CSV-derived figures, audit, clean offline smoke, English report and editable presentation decks. See [reproduction guide](docs/part3-reproduction.md). |
+
+## Member 3 evaluation
+
+Use Python 3.12 (formal evidence: 3.12.14). Only plotting needs an extra package; inference dependencies are not required.
+
+```bash
+python -m pip install -r requirements-part3.lock
+python -m unittest discover -s tests_part3 -v
+python -m evaluation.smoke --output artifacts/replay/part3-smoke-new.json
+python -m evaluation.analyze --source artifacts/part3/formal --output artifacts/replay/part3-analysis-new
+python -m evaluation.plot --input artifacts/replay/part3-analysis-new --output artifacts/replay/part3-figures-new
+```
+
+To execute a new matrix, use `python -m evaluation.run --profile formal --output artifacts/replay/part3-formal-new`; `pilot` runs 540 attempts. All runs use actual reconstruction, include failed attempts, block network connections and refuse non-empty destinations. Statistical intervals use the 30 seed means, not 3,000 independent rounds. Completion time is conditional on recovery and never fills failures with zero.
+
+- [Experiment methods, results and limitations](report/04-member3-evaluation.md)
+- [Integrated English report](report/final-report.md)
+- [Recovery and acceptance figure](artifacts/part3/figures/figure1_recovery_acceptance.png)
+- [Communication figure](artifacts/part3/figures/figure2_communication.png)
+- [Exact seed-level means and 95% intervals](artifacts/part3/analysis/summary.csv)
+- [Part 3 delivery and checksums](artifacts/part3/handoff.json)
+- [Four-slide midterm PowerPoint with both result charts](report/presentations/midterm.pptx)
+- [Final PowerPoint, seven main slides plus two backups](report/presentations/final.pptx)
+- [English scripts and questions](report/presentations/speaking-notes.md)
+- [Supplied HKUST template provenance](report/presentations/template_source.json)
+- [Standalone reproduction package with the template decks](artifacts/part3/reproduction.zip)
+
+Git preserves literal bytes under `artifacts/` and `deployments/`. Source files use LF. The transport ZIP explicitly fixes its creator platform to preserve the original Unix-generated envelope on Windows; frozen files and registered hashes are unchanged.
 
 ## Validation results
 
@@ -74,6 +102,7 @@ The main command includes the unit suite, four deterministic demos, byte-identic
 | `src/signal_pipeline/` | Member 1 data, model, signals, backtest and bundle pipeline |
 | `contracts/`, `scripts/`, `test/` | Registry contract, Hardhat scripts and tests |
 | `retrieval/` | Part 2 codec, bundle validation and single-round simulator |
+| `evaluation/`, `tests_part3/` | Part 3 actual experiment runner, audit, seed statistics, plotting and clean replay |
 | `demo/` | Offline CLI scenarios |
 | `tests/`, `tests_part2/` | Member 1 pytest suite and independent Part 2 unittest suite |
 | `configs/` | Frozen application and retrieval configuration |
@@ -82,6 +111,7 @@ The main command includes the unit suite, four deterministic demos, byte-identic
 | `artifacts/step2/`, `artifacts/step3/` | Frozen Member 1 evidence; left unchanged |
 | `artifacts/part2/` | Initial integration pilot, demos and Member 1 audit |
 | `artifacts/part2-validation-20261115/` | Canonical full validation evidence |
+| `artifacts/part3/` | Independent formal execution, evaluation, figures, audit and reproduction package |
 | `docs/`, `report/` | Pipeline reference, design and review notes |
 
 ## Part 1 generation and limitations

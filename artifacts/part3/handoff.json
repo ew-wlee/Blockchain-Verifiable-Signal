@@ -1,0 +1,94 @@
+{
+  "analysis_source_hashes": "artifacts/part3/analysis/provenance.json",
+  "anchor_mode": "offline_snapshot_not_live_rpc",
+  "base_commit": "b9b2d52c5f4a924c137fcd1766b10a364709bc00",
+  "code_state": "local uncommitted implementation; executable/input hashes are recorded in run and analysis provenance",
+  "completion_time_absolute_tolerance_ms": 1e-12,
+  "configurations": 6,
+  "corrupted_data_acceptance_count": 0,
+  "created_at_utc": "2026-11-16T06:56:35.619028+00:00",
+  "deliverables": {
+    "artifacts/part3/analysis/summary.csv": {
+      "bytes": 3894,
+      "sha256": "5860f0935d27a5c7eb125c057260119d6c55cfec9e0791f2d410a7cb7cec0dbf"
+    },
+    "artifacts/part3/figures/figure1_recovery_acceptance.png": {
+      "bytes": 121751,
+      "sha256": "5bbb264accbad1dc144f06fb8d1bfcc15caeccc6a509fb5424ad03840b3f5d32"
+    },
+    "artifacts/part3/figures/figure2_communication.png": {
+      "bytes": 114700,
+      "sha256": "bf6d3c1ba9701ea9dba5c73d1b15a4feb312c6215aead0ee66a7766c4842c1a5"
+    },
+    "docs/part3-reproduction.md": {
+      "bytes": 6755,
+      "sha256": "1ad83ce3031bc916ac111f5f88ea064d353371f0ebafe5e2c5966da324c78ae3"
+    },
+    "report/04-member3-evaluation.md": {
+      "bytes": 9323,
+      "sha256": "456f70d7c8d7df3c96ad9ff6368209cc6341d318bafd3bf6c0f7acac3dc03ee9"
+    },
+    "report/final-report.md": {
+      "bytes": 12194,
+      "sha256": "bf0f2ddd2a3c4945799245650ec8f63c7544f14be2ebe6767de0b4f4d4e2b8f5"
+    },
+    "report/presentations/final.pptx": {
+      "bytes": 23181489,
+      "sha256": "675607c3d0bd5911a92e452edef3056a1faca28fec45c11f2cd738805288a57b"
+    },
+    "report/presentations/midterm.pptx": {
+      "bytes": 11772490,
+      "sha256": "a745f0782de5b0031b4287a8a16b6e7274ad84de3bda04c70050ca5ea676a2c0"
+    },
+    "report/presentations/speaking-notes.md": {
+      "bytes": 7909,
+      "sha256": "f6f5c815ebb4d68c75be71b3f22d21594ab5a2bd675332c89075becb2ec7ffc7"
+    },
+    "report/presentations/template_source.json": {
+      "bytes": 870,
+      "sha256": "053d457535a52f8371846d35716b8d8f3b6f915ea8f09e9abf65d57871674a0d"
+    }
+  },
+  "delivery_language": "English",
+  "formal_rounds": 18000,
+  "full_replay": "artifacts/part3/full_replay.json",
+  "human_follow_up": [
+    "Timed team rehearsals",
+    "Open decks on the presentation computer; verify the offline CLI command and backup copies",
+    "Course submission/upload by team"
+  ],
+  "maximum_completion_time_difference_ms": 2.842170943040401e-14,
+  "no_new_chain_transactions": true,
+  "offline_actual_rounds_per_run": 36,
+  "offline_clean_runs": 2,
+  "presentation_template": {
+    "record": "report/presentations/template_source.json",
+    "source_name": "PPT_template_14.potx",
+    "source_sha256": "101c53b73948c1906258c1a0125be86960d0602efdcc72a45c7ef8de65a62921"
+  },
+  "presentation_update_note": "Both canonical deck files use the supplied HKUST template. The midterm contains both result charts.",
+  "replay_non_time_fields_exact": true,
+  "reproduction_package": "artifacts/part3/reproduction.zip",
+  "rounds_per_seed": 100,
+  "run_source_hashes": "artifacts/part3/formal/run.json",
+  "schema_version": "member3-handoff-v1",
+  "seeds_per_configuration": 30,
+  "slides": {
+    "editable_charts_and_tables": true,
+    "final_backup": 2,
+    "final_main": 7,
+    "midterm": 4,
+    "midterm_contains_both_result_charts": true,
+    "opened_in_desktop_powerpoint": false,
+    "package_and_layout_validated": true,
+    "rendered_and_visually_reviewed": true,
+    "template_applied": true
+  },
+  "smoke": "artifacts/part3/smoke.json",
+  "status": "completed_locally",
+  "tests": {
+    "part2": 14,
+    "part3": 10,
+    "passed": true
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "manifest_hash": "0x3f3fa32d9c98ba929c9e002f0d9e6c35ec46b42a36344c64bdb8426257870ca6",
+  "method": "Actual RS/replication reconstruction and independent returned-byte checks on every round",
+  "network_blocked": true,
+  "object_id": "0x1143b163d9a56e29e5714b7cd7ca41c6d05353ceb903704316219060915a4d07",
+  "payload_sha256": "38b39c1da8e318cdd8db0e4b05e69f689c58b08918a1582c8b8b7a739ddc47fc",
+  "profile": "formal",
+  "python": "3.12.14",
+  "retrieval_configuration": {
+    "environments": {
+      "default": {
+        "deadline_ms": 250,
+        "failure": 0.1,
+        "invalid": 0.1,
+        "latency_median_ms": 50,
+        "latency_sigma": 0.5,
+        "validator_ms": 1
+      },
+      "stress": {
+        "deadline_ms": 250,
+        "failure": 0.3,
+        "invalid": 0.3,
+        "latency_median_ms": 100,
+        "latency_sigma": 0.5,
+        "validator_ms": 1
+      }
+    },
+    "final_evaluation_for_member3": {
+      "rounds_per_seed": 100,
+      "seeds": 30
+    },
+    "schema_version": "member2-retrieval-v1",
+    "schemes": [
+      {
+        "k": 2,
+        "n": 4,
+        "scheme": "rs"
+      },
+      {
+        "k": 3,
+        "n": 6,
+        "scheme": "rs"
+      },
+      {
+        "k": 1,
+        "n": 2,
+        "scheme": "replication"
+      }
+    ],
+    "timing_note": "latency_sigma, deadline_ms, validator_ms are explicit implementation assumptions, not measured values or PDF-specified constants"
+  },
+  "round_count": 18000,
+  "rounds_per_seed": 100,
+  "run_id": "member3-formal",
+  "schema_version": "member3-run-v1",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "source_hashes": {
+    "artifacts/step2/bundle/backtest_summary.json": "d1426eb2504b8cebb4f83fdedebcad14cefbad432b8dddda13b4ac5f7dd61cf4",
+    "artifacts/step2/bundle/config.json": "fa70f2fb68fd6463fca5a921f8ce47e54d5b331e197658d751e0a1cb6de9379e",
+    "artifacts/step2/bundle/dataset.csv": "afcbcf10e2a437685b6ea24b79d7f0081140972ab7b81bf01d87a9761cb7b268",
+    "artifacts/step2/bundle/manifest.json": "3f3fa32d9c98ba929c9e002f0d9e6c35ec46b42a36344c64bdb8426257870ca6",
+    "artifacts/step2/bundle/model_reference.json": "014a30523241a9ae3f7296da7ce17ce776448015634f5f564350b9318249dd3f",
+    "artifacts/step2/bundle/signals.csv": "e37544ef6b88c44577bf8efffc2d956740f513a4c6c4697bd677029db3d6f4fa",
+    "configs/evaluation.json": "6d2a0855cfd3e757aa9374925d25550e2c1e45248ea550680a0f19a48e1ffb5a",
+    "configs/retrieval.json": "2b324ff00eefdb7369f60b875e6090570e4fff19d68eb2506c88012c50fbff86",
+    "demo/__init__.py": "83060eeb995dd32ac8c5376acf6969b521e7570c9c81d6db0e7ac897c9db73d4",
+    "demo/run.py": "06a3a0c2fb2d4d35c0d6f54ffa602fdad34ce527f4fcba31f2db4284241be76b",
+    "deployments/sepolia.json": "af4680391c044d69fb68835f6b6f975449ba5e966689e54e57a8503d5c80099b",
+    "evaluation/__init__.py": "3e1d5c9f511ee1c249924f194cd58a3b2a72576c5fe8b8d7da2a095c034a1222",
+    "evaluation/analyze.py": "bd64bc13032fa584666b54b6752334d0f72997a0ee327b0d5d0ceb752de12ae4",
+    "evaluation/common.py": "ed1f378155f1c68986af10260c9672685390e9cf22353d78100d2ecbd37c00e1",
+    "evaluation/plot.py": "95ce8131b2939ab90fff21fd37163f923d8980f1c4118f61cca04dbd69673c7d",
+    "evaluation/run.py": "162c66172dfc8068b80d09172d01454aae56775386863773c974db5c4efea151",
+    "evaluation/smoke.py": "3bcd953549ca19c12e97b8e31d0849d52a679b11f46d5a313a803bd77143e7d6",
+    "retrieval/__init__.py": "7372c939445d2054e22a5db00444222d26922d9b56158a23c4c703b546780924",
+    "retrieval/bundle.py": "4966ccc2a558860a1a4b94a780d5bab005c3f1cc2f653b8a0a470646d1dba374",
+    "retrieval/codec.py": "87b0b4a8ac6ecdc2a6bf4e650469722d7edb5ff60c1c4f5903d185fd7d7ffff2",
+    "retrieval/engine.py": "e94ba67eea2eb74f8c414425e464f72b7959c07eed7b9e4d95ca3fe73058cb51",
+    "tools/verify_bundle.py": "c0d292084f283465f0c8a5d565b8dfae152051e2ed645ac25acbb05506039280"
+  }
+}

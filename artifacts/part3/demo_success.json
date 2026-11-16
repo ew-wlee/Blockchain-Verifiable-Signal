@@ -1,0 +1,102 @@
+{
+  "accepted": true,
+  "anchor_mode": "offline_snapshot_not_live_rpc",
+  "communication_bytes": 4410042,
+  "completion_time": 61.0,
+  "config_id": "rs-3-6",
+  "contract_address": "0x7BA4b62c97Ce9567075736f7cffAEFafAC8C4E41",
+  "corrupted_data_acceptance_count": 0,
+  "deadline_ms": 250.0,
+  "environment": {
+    "deadline_ms": 250.0,
+    "failure": 0.1,
+    "invalid": 0.1,
+    "latency_median_ms": 50.0,
+    "latency_sigma": 0.5,
+    "validator_ms": 1.0
+  },
+  "events": [
+    {
+      "index": 1,
+      "latency_ms": 30.0,
+      "node": 1,
+      "reason": "fragment_hash_mismatch"
+    },
+    {
+      "index": 2,
+      "latency_ms": 40.0,
+      "node": 2,
+      "reason": "valid"
+    },
+    {
+      "index": 3,
+      "latency_ms": 50.0,
+      "node": 3,
+      "reason": "valid"
+    },
+    {
+      "index": 4,
+      "latency_ms": 60.0,
+      "node": 4,
+      "reason": "valid"
+    }
+  ],
+  "evidence_bytes": 676,
+  "explorer": {
+    "contract": "https://sepolia.etherscan.io/address/0x7BA4b62c97Ce9567075736f7cffAEFafAC8C4E41",
+    "deployment_tx": "https://sepolia.etherscan.io/tx/0x4a05fefe27d1d431113318f94f0fa080ebc8c674226bcd3ae449adad589a5f90",
+    "registration_tx": "https://sepolia.etherscan.io/tx/0x742eecdd2cffcbd74fe32b61ec0ee3fff48c29d4163d998afe86af8bff5c5e51"
+  },
+  "failure_reason": null,
+  "fragment_count": 6,
+  "hash_match": true,
+  "k": 3,
+  "n": 6,
+  "node_states": [],
+  "object_id": "0x1143b163d9a56e29e5714b7cd7ca41c6d05353ceb903704316219060915a4d07",
+  "payload_commitment": "cf22e40015c603ab2eb904d5bdd85e3604a9972f44523704e4c7108e366ddc6c",
+  "payload_sha256": "38b39c1da8e318cdd8db0e4b05e69f689c58b08918a1582c8b8b7a739ddc47fc",
+  "reconstructed_manifest_hash": "0x3f3fa32d9c98ba929c9e002f0d9e6c35ec46b42a36344c64bdb8426257870ca6",
+  "reconstructed_sha256": "38b39c1da8e318cdd8db0e4b05e69f689c58b08918a1582c8b8b7a739ddc47fc",
+  "recovered": true,
+  "registration_tx": "0x742eecdd2cffcbd74fe32b61ec0ee3fff48c29d4163d998afe86af8bff5c5e51",
+  "request_bytes": 558,
+  "requested_fragments": 6,
+  "response_bytes": 4408808,
+  "round": 0,
+  "run_id": "offline-demo",
+  "scheme": "rs",
+  "seed": 0,
+  "silent_nodes": [
+    0
+  ],
+  "storage_bytes": 6613212,
+  "storage_overhead": 2.0,
+  "time_unit": "ms",
+  "trace": {
+    "model_id": "amazon/chronos-t5-small",
+    "revision": "a971ba21945c4f1796b17a91fe69214b5f4ad472",
+    "signal": {
+      "context_end_timestamp_utc": "2024-06-30T23:00:00Z",
+      "current_close": "62772.01000000",
+      "predicted_close_median": "62799.07812500",
+      "predicted_return": "0.000431213291",
+      "signal": "hold",
+      "signal_timestamp_utc": "2024-07-01T00:00:00Z",
+      "split": "validation",
+      "symbol": "BTCUSDT",
+      "tau": "0.001923089035"
+    }
+  },
+  "valid_fragments": 3,
+  "valid_indices": [
+    2,
+    3,
+    4
+  ],
+  "votes": [
+    "ACCEPT",
+    "ACCEPT",
+    "ACCEPT"
+  ]
+}
