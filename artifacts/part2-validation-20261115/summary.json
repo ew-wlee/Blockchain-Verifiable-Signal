@@ -1,0 +1,212 @@
+{
+  "anchor_mode": "existing offline snapshot; no new chain query or transaction",
+  "config_sha256": "2b324ff00eefdb7369f60b875e6090570e4fff19d68eb2506c88012c50fbff86",
+  "configurations": {
+    "default-replication-1-2": {
+      "acceptance_probability": 0.955,
+      "accepted": 2865,
+      "communication_bytes_total": 10767417400,
+      "failure_reasons": {
+        "insufficient_valid_fragments": 135
+      },
+      "independent_corrupted_acceptance": 0,
+      "mean_communication_bytes": 3589139.1333333333,
+      "recovered": 2865,
+      "recovery_probability": 0.955,
+      "rounds": 3000,
+      "storage_overhead": 2.0
+    },
+    "default-rs-2-4": {
+      "acceptance_probability": 0.9766666666666667,
+      "accepted": 2930,
+      "communication_bytes_total": 11019853408,
+      "failure_reasons": {
+        "insufficient_valid_fragments": 70
+      },
+      "independent_corrupted_acceptance": 0,
+      "mean_communication_bytes": 3673284.4693333334,
+      "recovered": 2930,
+      "recovery_probability": 0.9766666666666667,
+      "rounds": 3000,
+      "storage_overhead": 2.0
+    },
+    "default-rs-3-6": {
+      "acceptance_probability": 0.9846666666666667,
+      "accepted": 2954,
+      "communication_bytes_total": 11099242857,
+      "failure_reasons": {
+        "insufficient_valid_fragments": 46
+      },
+      "independent_corrupted_acceptance": 0,
+      "mean_communication_bytes": 3699747.619,
+      "recovered": 2954,
+      "recovery_probability": 0.9846666666666667,
+      "rounds": 3000,
+      "storage_overhead": 2.0
+    },
+    "stress-replication-1-2": {
+      "acceptance_probability": 0.6276666666666667,
+      "accepted": 1883,
+      "communication_bytes_total": 10922835825,
+      "failure_reasons": {
+        "deadline": 97,
+        "insufficient_valid_fragments": 1020
+      },
+      "independent_corrupted_acceptance": 0,
+      "mean_communication_bytes": 3640945.275,
+      "recovered": 1883,
+      "recovery_probability": 0.6276666666666667,
+      "rounds": 3000,
+      "storage_overhead": 2.0
+    },
+    "stress-rs-2-4": {
+      "acceptance_probability": 0.5116666666666667,
+      "accepted": 1535,
+      "communication_bytes_total": 11881312320,
+      "failure_reasons": {
+        "deadline": 189,
+        "insufficient_valid_fragments": 1276
+      },
+      "independent_corrupted_acceptance": 0,
+      "mean_communication_bytes": 3960437.44,
+      "recovered": 1535,
+      "recovery_probability": 0.5116666666666667,
+      "rounds": 3000,
+      "storage_overhead": 2.0
+    },
+    "stress-rs-3-6": {
+      "acceptance_probability": 0.4236666666666667,
+      "accepted": 1271,
+      "communication_bytes_total": 12349331571,
+      "failure_reasons": {
+        "deadline": 280,
+        "insufficient_valid_fragments": 1449
+      },
+      "independent_corrupted_acceptance": 0,
+      "mean_communication_bytes": 4116443.857,
+      "recovered": 1271,
+      "recovery_probability": 0.4236666666666667,
+      "rounds": 3000,
+      "storage_overhead": 2.0
+    }
+  },
+  "demos": {
+    "deadline": {
+      "accepted": false,
+      "completion_time_ms": null,
+      "failure_reason": "deadline",
+      "hash_match": false,
+      "recovered": false,
+      "two_runs_identical": true
+    },
+    "insufficient": {
+      "accepted": false,
+      "completion_time_ms": null,
+      "failure_reason": "insufficient_valid_fragments",
+      "hash_match": false,
+      "recovered": false,
+      "two_runs_identical": true
+    },
+    "replication": {
+      "accepted": true,
+      "completion_time_ms": 31.0,
+      "failure_reason": null,
+      "hash_match": true,
+      "recovered": true,
+      "two_runs_identical": true
+    },
+    "success": {
+      "accepted": true,
+      "completion_time_ms": 61.0,
+      "failure_reason": null,
+      "hash_match": true,
+      "recovered": true,
+      "two_runs_identical": true
+    }
+  },
+  "elapsed_seconds": 434.545,
+  "exhaustive": {
+    "replication-1-2": {
+      "assignments": 9,
+      "passed": true
+    },
+    "rs-2-4": {
+      "assignments": 81,
+      "passed": true
+    },
+    "rs-3-6": {
+      "assignments": 729,
+      "passed": true
+    }
+  },
+  "frozen_inputs_unchanged": true,
+  "full_rounds": 18000,
+  "independent_corrupted_acceptance": 0,
+  "limitations": [
+    "Simulated independent nodes and delays, no real network benchmark.",
+    "Honest online validators and trusted setup fragment catalog.",
+    "No replay of Part 1 inference or live registry getSignal.",
+    "Descriptive validation results only; Member 3 still owns CI analysis, charts and final report."
+  ],
+  "manifest_hash": "0x3f3fa32d9c98ba929c9e002f0d9e6c35ec46b42a36344c64bdb8426257870ca6",
+  "network": "retrieval and exhaustive rounds blocked; demos enforce offline themselves",
+  "object_id": "0x1143b163d9a56e29e5714b7cd7ca41c6d05353ceb903704316219060915a4d07",
+  "passed": true,
+  "payload_sha256": "38b39c1da8e318cdd8db0e4b05e69f689c58b08918a1582c8b8b7a739ddc47fc",
+  "platform": "macOS-14.3-arm64-arm-64bit",
+  "python": "3.12.14",
+  "record_completion": {
+    "actual_replayed_rounds": 18000,
+    "added_fields": [
+      "run_id",
+      "fragment_count",
+      "requested_fragments",
+      "votes"
+    ],
+    "all_original_fields_identical": true,
+    "audit_file": "record_completion_audit.json",
+    "elapsed_seconds": 164.133,
+    "historical_backup_status": "Superseded compact CSV retained locally, not part of the canonical shared evidence. Original hash is in record_completion_audit.json.",
+    "passed": true
+  },
+  "registration_tx": "0x742eecdd2cffcbd74fe32b61ec0ee3fff48c29d4163d998afe86af8bff5c5e51",
+  "round_record_fields": [
+    "run_id",
+    "config_id",
+    "seed",
+    "round",
+    "k",
+    "n",
+    "storage_bytes",
+    "storage_overhead",
+    "recovered",
+    "accepted",
+    "hash_match",
+    "valid_fragments",
+    "completion_time",
+    "failure_reason",
+    "request_bytes",
+    "response_bytes",
+    "evidence_bytes",
+    "communication_bytes",
+    "independent_corrupted_acceptance",
+    "payload_sha256",
+    "reconstructed_sha256",
+    "reconstructed_manifest_hash",
+    "fragment_count",
+    "requested_fragments",
+    "votes"
+  ],
+  "round_record_schema": "part2-full-round-record-v2",
+  "source_hashes": {
+    "demo/__init__.py": "83060eeb995dd32ac8c5376acf6969b521e7570c9c81d6db0e7ac897c9db73d4",
+    "demo/run.py": "06a3a0c2fb2d4d35c0d6f54ffa602fdad34ce527f4fcba31f2db4284241be76b",
+    "retrieval/__init__.py": "7372c939445d2054e22a5db00444222d26922d9b56158a23c4c703b546780924",
+    "retrieval/bundle.py": "35c5cfa42e57260908aaee1a1a6d97fbda45848a28311c75b78c93cbc3a9acf6",
+    "retrieval/codec.py": "87b0b4a8ac6ecdc2a6bf4e650469722d7edb5ff60c1c4f5903d185fd7d7ffff2",
+    "retrieval/engine.py": "e94ba67eea2eb74f8c414425e464f72b7959c07eed7b9e4d95ca3fe73058cb51",
+    "tests_part2/test_retrieval.py": "855b6bda87e8befe459d11f11e12953bb11cfd69ce5c4e14104c92d7410f3a84"
+  },
+  "unit_suite_passed": true,
+  "unit_test_groups": 13
+}

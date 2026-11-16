@@ -1,0 +1,10 @@
+{
+  "schema_version": "member2-retrieval-v1",
+  "environments": {
+    "default": {"failure": 0.1, "invalid": 0.1, "latency_median_ms": 50, "latency_sigma": 0.5, "deadline_ms": 250, "validator_ms": 1},
+    "stress": {"failure": 0.3, "invalid": 0.3, "latency_median_ms": 100, "latency_sigma": 0.5, "deadline_ms": 250, "validator_ms": 1}
+  },
+  "schemes": [{"scheme": "rs", "k": 2, "n": 4}, {"scheme": "rs", "k": 3, "n": 6}, {"scheme": "replication", "k": 1, "n": 2}],
+  "final_evaluation_for_member3": {"seeds": 30, "rounds_per_seed": 100},
+  "timing_note": "latency_sigma, deadline_ms, validator_ms are explicit implementation assumptions, not measured values or PDF-specified constants"
+}

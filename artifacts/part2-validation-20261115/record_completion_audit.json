@@ -1,0 +1,133 @@
+{
+  "added_fields": [
+    "run_id",
+    "fragment_count",
+    "requested_fragments",
+    "votes"
+  ],
+  "all_original_fields_identical": true,
+  "complete_csv_sha256": "4c613ddadaa48c531afc720190735d148bafcf8c789f738fb105ca42595a288f",
+  "config_sha256": "2b324ff00eefdb7369f60b875e6090570e4fff19d68eb2506c88012c50fbff86",
+  "configurations": {
+    "default-replication-1-2": {
+      "accepted": 2865,
+      "all_original_fields_identical": true,
+      "config_id": "default-replication-1-2",
+      "file": "default-replication-1-2.csv",
+      "recovered": 2865,
+      "rows": 3000,
+      "sha256": "15cac629183062e4150b66884c202d15b19d6902ab4d673ecaebb9fa11ce2b70",
+      "vote_counts": {
+        "ACCEPT,ACCEPT,ACCEPT": 2865,
+        "REJECT,REJECT,REJECT": 135
+      }
+    },
+    "default-rs-2-4": {
+      "accepted": 2930,
+      "all_original_fields_identical": true,
+      "config_id": "default-rs-2-4",
+      "file": "default-rs-2-4.csv",
+      "recovered": 2930,
+      "rows": 3000,
+      "sha256": "d00c4ba61339a4a654f1ea0acb47afdd91efcdb05cd201626f62843fe2ff1982",
+      "vote_counts": {
+        "ACCEPT,ACCEPT,ACCEPT": 2930,
+        "REJECT,REJECT,REJECT": 70
+      }
+    },
+    "default-rs-3-6": {
+      "accepted": 2954,
+      "all_original_fields_identical": true,
+      "config_id": "default-rs-3-6",
+      "file": "default-rs-3-6.csv",
+      "recovered": 2954,
+      "rows": 3000,
+      "sha256": "e653e47120f1a79a4d10662daa3111d3e2d50535a353660a33a5c500837d3a08",
+      "vote_counts": {
+        "ACCEPT,ACCEPT,ACCEPT": 2954,
+        "REJECT,REJECT,REJECT": 46
+      }
+    },
+    "stress-replication-1-2": {
+      "accepted": 1883,
+      "all_original_fields_identical": true,
+      "config_id": "stress-replication-1-2",
+      "file": "stress-replication-1-2.csv",
+      "recovered": 1883,
+      "rows": 3000,
+      "sha256": "128a716ec9763b7a3558a97f41ce0ecc2b5d7275b49b6ce66e4bc1ed637b60d7",
+      "vote_counts": {
+        "ACCEPT,ACCEPT,ACCEPT": 1883,
+        "REJECT,REJECT,REJECT": 1117
+      }
+    },
+    "stress-rs-2-4": {
+      "accepted": 1535,
+      "all_original_fields_identical": true,
+      "config_id": "stress-rs-2-4",
+      "file": "stress-rs-2-4.csv",
+      "recovered": 1535,
+      "rows": 3000,
+      "sha256": "96a29b078c39d7b917de65be8d3c57c51cc54461d190ecd431482ee7ead17bd8",
+      "vote_counts": {
+        "ACCEPT,ACCEPT,ACCEPT": 1535,
+        "REJECT,REJECT,REJECT": 1465
+      }
+    },
+    "stress-rs-3-6": {
+      "accepted": 1271,
+      "all_original_fields_identical": true,
+      "config_id": "stress-rs-3-6",
+      "file": "stress-rs-3-6.csv",
+      "recovered": 1271,
+      "rows": 3000,
+      "sha256": "e92825fbbadb02badb9f4041457390c5583b0ebd64de8930f672b0e680550c12",
+      "vote_counts": {
+        "ACCEPT,ACCEPT,ACCEPT": 1271,
+        "REJECT,REJECT,REJECT": 1729
+      }
+    }
+  },
+  "elapsed_seconds": 164.133,
+  "inputs_and_retrieval_code_unchanged": true,
+  "method": "Actual deterministic rerun; vote lists taken from run_round output, JSON-serialized. Original CSV not modified.",
+  "original_csv_sha256": "c9ef0551567c286fdab5f935df32402aa713cc9a75572155aaf70478e9a6ee37",
+  "original_fields": [
+    "config_id",
+    "seed",
+    "round",
+    "k",
+    "n",
+    "storage_bytes",
+    "storage_overhead",
+    "recovered",
+    "accepted",
+    "hash_match",
+    "valid_fragments",
+    "completion_time",
+    "failure_reason",
+    "request_bytes",
+    "response_bytes",
+    "evidence_bytes",
+    "communication_bytes",
+    "independent_corrupted_acceptance",
+    "payload_sha256",
+    "reconstructed_sha256",
+    "reconstructed_manifest_hash"
+  ],
+  "passed": true,
+  "rows": 18000,
+  "source_hashes": {
+    "artifacts/step2/bundle/backtest_summary.json": "d1426eb2504b8cebb4f83fdedebcad14cefbad432b8dddda13b4ac5f7dd61cf4",
+    "artifacts/step2/bundle/config.json": "fa70f2fb68fd6463fca5a921f8ce47e54d5b331e197658d751e0a1cb6de9379e",
+    "artifacts/step2/bundle/dataset.csv": "afcbcf10e2a437685b6ea24b79d7f0081140972ab7b81bf01d87a9761cb7b268",
+    "artifacts/step2/bundle/manifest.json": "3f3fa32d9c98ba929c9e002f0d9e6c35ec46b42a36344c64bdb8426257870ca6",
+    "artifacts/step2/bundle/model_reference.json": "014a30523241a9ae3f7296da7ce17ce776448015634f5f564350b9318249dd3f",
+    "artifacts/step2/bundle/signals.csv": "e37544ef6b88c44577bf8efffc2d956740f513a4c6c4697bd677029db3d6f4fa",
+    "deployments/sepolia.json": "af4680391c044d69fb68835f6b6f975449ba5e966689e54e57a8503d5c80099b",
+    "retrieval/__init__.py": "7372c939445d2054e22a5db00444222d26922d9b56158a23c4c703b546780924",
+    "retrieval/bundle.py": "35c5cfa42e57260908aaee1a1a6d97fbda45848a28311c75b78c93cbc3a9acf6",
+    "retrieval/codec.py": "87b0b4a8ac6ecdc2a6bf4e650469722d7edb5ff60c1c4f5903d185fd7d7ffff2",
+    "retrieval/engine.py": "e94ba67eea2eb74f8c414425e464f72b7959c07eed7b9e4d95ca3fe73058cb51"
+  }
+}

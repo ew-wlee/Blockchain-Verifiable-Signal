@@ -1,0 +1,19 @@
+{
+  "all_passed": true,
+  "reject_invalid_latency_-1": true,
+  "reject_invalid_latency_inf": true,
+  "reject_invalid_latency_nan": true,
+  "reject_node_index_mismatch": true,
+  "reject_repacked_tampered_backtest_summary.json": true,
+  "reject_repacked_tampered_config.json": true,
+  "reject_repacked_tampered_dataset.csv": true,
+  "reject_repacked_tampered_manifest.json": true,
+  "reject_repacked_tampered_model_reference.json": true,
+  "reject_repacked_tampered_signals.csv": true,
+  "reject_unsupported_compression": true,
+  "reject_wrong_anchor_data_hash": true,
+  "reject_wrong_anchor_manifest_hash": true,
+  "reject_wrong_anchor_model_hash": true,
+  "reject_wrong_anchor_object_id": true,
+  "reject_wrong_anchor_signal_hash": true
+}

@@ -1,0 +1,31 @@
+{
+  "anchor_mode": "offline_snapshot_not_live_rpc",
+  "api": "retrieval.engine.prepare / Environment / run_round",
+  "documentation": "report/02-member2-retrieval.md",
+  "evidence_sha256": {
+    "backtest_recheck.json": "d9789b04f0f67b3cd9377bf4b3ad59cf89d95220bf90e4a286049ce6ca5cba1e",
+    "deadline.json": "804ce443ccff3f643d78a5e14702e631a5188fa4f99fa512aa085b91d9f7f657",
+    "insufficient.json": "ec14c290a6ca315cfecde4fdb7b985dcb19a2cf00a8af98c0a304a2fe303425c",
+    "member1_audit.json": "9668568e089e25972043cf70c4d9a34282dacfb18563cdde7208cd8af2989a04",
+    "pilot.json": "14fa80bbd8caeb81aaa616e9464337c1514318a937bba52393dffe0971bd81c3",
+    "replication.json": "ee7de1bd14e1a66ea5b5e6b09915f96c659e781d490c9bd903ed86b3873943f4",
+    "success.json": "5f9238898ea8ba906d3bf34044e7cb4636a131ad30fc09609df17d95aba0007e",
+    "tests.txt": "7eca4fe1903c8664e1f57e4759dd1101319503cc131041c2b5efce06621051f5"
+  },
+  "formal_evaluation": "Full 18,000-round retrieval matrix complete; Member 3 confidence intervals, figures and final interpretation pending.",
+  "full_validation_evidence": "artifacts/part2-validation-20261115",
+  "manifest_hash": "0x3f3fa32d9c98ba929c9e002f0d9e6c35ec46b42a36344c64bdb8426257870ca6",
+  "member1_hardhat_passed": 9,
+  "member1_python": {
+    "passed": 48,
+    "skipped": 3
+  },
+  "member1_review": "report/03-member1-review.md",
+  "member1_test_environment": "Python 3.12 partial test dependencies; not a full locked inference replay",
+  "object_id": "0x1143b163d9a56e29e5714b7cd7ca41c6d05353ceb903704316219060915a4d07",
+  "part2_test_groups": 13,
+  "payload_sha256": "38b39c1da8e318cdd8db0e4b05e69f689c58b08918a1582c8b8b7a739ddc47fc",
+  "pilot_rounds": 540,
+  "schema_version": "member2-handoff-v1",
+  "status": "implemented_and_tested"
+}

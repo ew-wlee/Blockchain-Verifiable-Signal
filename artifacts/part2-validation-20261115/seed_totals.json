@@ -1,0 +1,1274 @@
+{
+  "default-replication-1-2": [
+    {
+      "accepted": 98,
+      "communication_bytes": 370377400,
+      "recovered": 98,
+      "rounds": 100,
+      "seed": 0
+    },
+    {
+      "accepted": 99,
+      "communication_bytes": 373684175,
+      "recovered": 99,
+      "rounds": 100,
+      "seed": 1
+    },
+    {
+      "accepted": 94,
+      "communication_bytes": 360457075,
+      "recovered": 94,
+      "rounds": 100,
+      "seed": 2
+    },
+    {
+      "accepted": 96,
+      "communication_bytes": 363763850,
+      "recovered": 96,
+      "rounds": 100,
+      "seed": 3
+    },
+    {
+      "accepted": 97,
+      "communication_bytes": 334002875,
+      "recovered": 97,
+      "rounds": 100,
+      "seed": 4
+    },
+    {
+      "accepted": 92,
+      "communication_bytes": 373684175,
+      "recovered": 92,
+      "rounds": 100,
+      "seed": 5
+    },
+    {
+      "accepted": 95,
+      "communication_bytes": 363763850,
+      "recovered": 95,
+      "rounds": 100,
+      "seed": 6
+    },
+    {
+      "accepted": 94,
+      "communication_bytes": 343923200,
+      "recovered": 94,
+      "rounds": 100,
+      "seed": 7
+    },
+    {
+      "accepted": 94,
+      "communication_bytes": 367070625,
+      "recovered": 94,
+      "rounds": 100,
+      "seed": 8
+    },
+    {
+      "accepted": 98,
+      "communication_bytes": 350536750,
+      "recovered": 98,
+      "rounds": 100,
+      "seed": 9
+    },
+    {
+      "accepted": 98,
+      "communication_bytes": 350536750,
+      "recovered": 98,
+      "rounds": 100,
+      "seed": 10
+    },
+    {
+      "accepted": 93,
+      "communication_bytes": 360457075,
+      "recovered": 93,
+      "rounds": 100,
+      "seed": 11
+    },
+    {
+      "accepted": 93,
+      "communication_bytes": 376990950,
+      "recovered": 93,
+      "rounds": 100,
+      "seed": 12
+    },
+    {
+      "accepted": 96,
+      "communication_bytes": 360457075,
+      "recovered": 96,
+      "rounds": 100,
+      "seed": 13
+    },
+    {
+      "accepted": 93,
+      "communication_bytes": 340616425,
+      "recovered": 93,
+      "rounds": 100,
+      "seed": 14
+    },
+    {
+      "accepted": 98,
+      "communication_bytes": 347229975,
+      "recovered": 98,
+      "rounds": 100,
+      "seed": 15
+    },
+    {
+      "accepted": 96,
+      "communication_bytes": 350536750,
+      "recovered": 96,
+      "rounds": 100,
+      "seed": 16
+    },
+    {
+      "accepted": 88,
+      "communication_bytes": 373684175,
+      "recovered": 88,
+      "rounds": 100,
+      "seed": 17
+    },
+    {
+      "accepted": 94,
+      "communication_bytes": 360457075,
+      "recovered": 94,
+      "rounds": 100,
+      "seed": 18
+    },
+    {
+      "accepted": 96,
+      "communication_bytes": 363763850,
+      "recovered": 96,
+      "rounds": 100,
+      "seed": 19
+    },
+    {
+      "accepted": 96,
+      "communication_bytes": 347229975,
+      "recovered": 96,
+      "rounds": 100,
+      "seed": 20
+    },
+    {
+      "accepted": 98,
+      "communication_bytes": 360457075,
+      "recovered": 98,
+      "rounds": 100,
+      "seed": 21
+    },
+    {
+      "accepted": 96,
+      "communication_bytes": 373684175,
+      "recovered": 96,
+      "rounds": 100,
+      "seed": 22
+    },
+    {
+      "accepted": 95,
+      "communication_bytes": 353843525,
+      "recovered": 95,
+      "rounds": 100,
+      "seed": 23
+    },
+    {
+      "accepted": 96,
+      "communication_bytes": 353843525,
+      "recovered": 96,
+      "rounds": 100,
+      "seed": 24
+    },
+    {
+      "accepted": 93,
+      "communication_bytes": 370377400,
+      "recovered": 93,
+      "rounds": 100,
+      "seed": 25
+    },
+    {
+      "accepted": 100,
+      "communication_bytes": 343923200,
+      "recovered": 100,
+      "rounds": 100,
+      "seed": 26
+    },
+    {
+      "accepted": 94,
+      "communication_bytes": 363763850,
+      "recovered": 94,
+      "rounds": 100,
+      "seed": 27
+    },
+    {
+      "accepted": 98,
+      "communication_bytes": 376990950,
+      "recovered": 98,
+      "rounds": 100,
+      "seed": 28
+    },
+    {
+      "accepted": 97,
+      "communication_bytes": 337309650,
+      "recovered": 97,
+      "rounds": 100,
+      "seed": 29
+    }
+  ],
+  "default-rs-2-4": [
+    {
+      "accepted": 99,
+      "communication_bytes": 370414928,
+      "recovered": 99,
+      "rounds": 100,
+      "seed": 0
+    },
+    {
+      "accepted": 99,
+      "communication_bytes": 372068400,
+      "recovered": 99,
+      "rounds": 100,
+      "seed": 1
+    },
+    {
+      "accepted": 98,
+      "communication_bytes": 373721872,
+      "recovered": 98,
+      "rounds": 100,
+      "seed": 2
+    },
+    {
+      "accepted": 97,
+      "communication_bytes": 367107984,
+      "recovered": 97,
+      "rounds": 100,
+      "seed": 3
+    },
+    {
+      "accepted": 99,
+      "communication_bytes": 365454512,
+      "recovered": 99,
+      "rounds": 100,
+      "seed": 4
+    },
+    {
+      "accepted": 93,
+      "communication_bytes": 373721872,
+      "recovered": 93,
+      "rounds": 100,
+      "seed": 5
+    },
+    {
+      "accepted": 99,
+      "communication_bytes": 372068400,
+      "recovered": 99,
+      "rounds": 100,
+      "seed": 6
+    },
+    {
+      "accepted": 97,
+      "communication_bytes": 357187152,
+      "recovered": 97,
+      "rounds": 100,
+      "seed": 7
+    },
+    {
+      "accepted": 98,
+      "communication_bytes": 362147568,
+      "recovered": 98,
+      "rounds": 100,
+      "seed": 8
+    },
+    {
+      "accepted": 99,
+      "communication_bytes": 368761456,
+      "recovered": 99,
+      "rounds": 100,
+      "seed": 9
+    },
+    {
+      "accepted": 99,
+      "communication_bytes": 358840624,
+      "recovered": 99,
+      "rounds": 100,
+      "seed": 10
+    },
+    {
+      "accepted": 100,
+      "communication_bytes": 372068400,
+      "recovered": 100,
+      "rounds": 100,
+      "seed": 11
+    },
+    {
+      "accepted": 96,
+      "communication_bytes": 375375344,
+      "recovered": 96,
+      "rounds": 100,
+      "seed": 12
+    },
+    {
+      "accepted": 100,
+      "communication_bytes": 365454512,
+      "recovered": 100,
+      "rounds": 100,
+      "seed": 13
+    },
+    {
+      "accepted": 97,
+      "communication_bytes": 358840624,
+      "recovered": 97,
+      "rounds": 100,
+      "seed": 14
+    },
+    {
+      "accepted": 98,
+      "communication_bytes": 360494096,
+      "recovered": 98,
+      "rounds": 100,
+      "seed": 15
+    },
+    {
+      "accepted": 97,
+      "communication_bytes": 363801040,
+      "recovered": 97,
+      "rounds": 100,
+      "seed": 16
+    },
+    {
+      "accepted": 96,
+      "communication_bytes": 377028816,
+      "recovered": 96,
+      "rounds": 100,
+      "seed": 17
+    },
+    {
+      "accepted": 94,
+      "communication_bytes": 362147568,
+      "recovered": 94,
+      "rounds": 100,
+      "seed": 18
+    },
+    {
+      "accepted": 98,
+      "communication_bytes": 363801040,
+      "recovered": 98,
+      "rounds": 100,
+      "seed": 19
+    },
+    {
+      "accepted": 98,
+      "communication_bytes": 375375344,
+      "recovered": 98,
+      "rounds": 100,
+      "seed": 20
+    },
+    {
+      "accepted": 99,
+      "communication_bytes": 373721872,
+      "recovered": 99,
+      "rounds": 100,
+      "seed": 21
+    },
+    {
+      "accepted": 96,
+      "communication_bytes": 367107984,
+      "recovered": 96,
+      "rounds": 100,
+      "seed": 22
+    },
+    {
+      "accepted": 99,
+      "communication_bytes": 368761456,
+      "recovered": 99,
+      "rounds": 100,
+      "seed": 23
+    },
+    {
+      "accepted": 99,
+      "communication_bytes": 365454512,
+      "recovered": 99,
+      "rounds": 100,
+      "seed": 24
+    },
+    {
+      "accepted": 95,
+      "communication_bytes": 375375344,
+      "recovered": 95,
+      "rounds": 100,
+      "seed": 25
+    },
+    {
+      "accepted": 100,
+      "communication_bytes": 353880208,
+      "recovered": 100,
+      "rounds": 100,
+      "seed": 26
+    },
+    {
+      "accepted": 95,
+      "communication_bytes": 372068400,
+      "recovered": 95,
+      "rounds": 100,
+      "seed": 27
+    },
+    {
+      "accepted": 98,
+      "communication_bytes": 370414928,
+      "recovered": 98,
+      "rounds": 100,
+      "seed": 28
+    },
+    {
+      "accepted": 98,
+      "communication_bytes": 357187152,
+      "recovered": 98,
+      "rounds": 100,
+      "seed": 29
+    }
+  ],
+  "default-rs-3-6": [
+    {
+      "accepted": 99,
+      "communication_bytes": 368247714,
+      "recovered": 99,
+      "rounds": 100,
+      "seed": 0
+    },
+    {
+      "accepted": 100,
+      "communication_bytes": 368247714,
+      "recovered": 100,
+      "rounds": 100,
+      "seed": 1
+    },
+    {
+      "accepted": 98,
+      "communication_bytes": 378169053,
+      "recovered": 98,
+      "rounds": 100,
+      "seed": 2
+    },
+    {
+      "accepted": 98,
+      "communication_bytes": 370452456,
+      "recovered": 98,
+      "rounds": 100,
+      "seed": 3
+    },
+    {
+      "accepted": 100,
+      "communication_bytes": 371554827,
+      "recovered": 100,
+      "rounds": 100,
+      "seed": 4
+    },
+    {
+      "accepted": 99,
+      "communication_bytes": 372657198,
+      "recovered": 99,
+      "rounds": 100,
+      "seed": 5
+    },
+    {
+      "accepted": 99,
+      "communication_bytes": 372657198,
+      "recovered": 99,
+      "rounds": 100,
+      "seed": 6
+    },
+    {
+      "accepted": 99,
+      "communication_bytes": 360531117,
+      "recovered": 99,
+      "rounds": 100,
+      "seed": 7
+    },
+    {
+      "accepted": 98,
+      "communication_bytes": 371554827,
+      "recovered": 98,
+      "rounds": 100,
+      "seed": 8
+    },
+    {
+      "accepted": 99,
+      "communication_bytes": 371554827,
+      "recovered": 99,
+      "rounds": 100,
+      "seed": 9
+    },
+    {
+      "accepted": 100,
+      "communication_bytes": 360531117,
+      "recovered": 100,
+      "rounds": 100,
+      "seed": 10
+    },
+    {
+      "accepted": 100,
+      "communication_bytes": 364940601,
+      "recovered": 100,
+      "rounds": 100,
+      "seed": 11
+    },
+    {
+      "accepted": 98,
+      "communication_bytes": 375964311,
+      "recovered": 98,
+      "rounds": 100,
+      "seed": 12
+    },
+    {
+      "accepted": 100,
+      "communication_bytes": 367145343,
+      "recovered": 100,
+      "rounds": 100,
+      "seed": 13
+    },
+    {
+      "accepted": 97,
+      "communication_bytes": 364940601,
+      "recovered": 97,
+      "rounds": 100,
+      "seed": 14
+    },
+    {
+      "accepted": 98,
+      "communication_bytes": 375964311,
+      "recovered": 98,
+      "rounds": 100,
+      "seed": 15
+    },
+    {
+      "accepted": 100,
+      "communication_bytes": 359428746,
+      "recovered": 100,
+      "rounds": 100,
+      "seed": 16
+    },
+    {
+      "accepted": 98,
+      "communication_bytes": 381476166,
+      "recovered": 98,
+      "rounds": 100,
+      "seed": 17
+    },
+    {
+      "accepted": 97,
+      "communication_bytes": 374861940,
+      "recovered": 97,
+      "rounds": 100,
+      "seed": 18
+    },
+    {
+      "accepted": 99,
+      "communication_bytes": 369350085,
+      "recovered": 99,
+      "rounds": 100,
+      "seed": 19
+    },
+    {
+      "accepted": 98,
+      "communication_bytes": 373759569,
+      "recovered": 98,
+      "rounds": 100,
+      "seed": 20
+    },
+    {
+      "accepted": 97,
+      "communication_bytes": 375964311,
+      "recovered": 97,
+      "rounds": 100,
+      "seed": 21
+    },
+    {
+      "accepted": 97,
+      "communication_bytes": 366042972,
+      "recovered": 97,
+      "rounds": 100,
+      "seed": 22
+    },
+    {
+      "accepted": 98,
+      "communication_bytes": 372657198,
+      "recovered": 98,
+      "rounds": 100,
+      "seed": 23
+    },
+    {
+      "accepted": 99,
+      "communication_bytes": 370452456,
+      "recovered": 99,
+      "rounds": 100,
+      "seed": 24
+    },
+    {
+      "accepted": 97,
+      "communication_bytes": 382578537,
+      "recovered": 97,
+      "rounds": 100,
+      "seed": 25
+    },
+    {
+      "accepted": 100,
+      "communication_bytes": 358326375,
+      "recovered": 100,
+      "rounds": 100,
+      "seed": 26
+    },
+    {
+      "accepted": 95,
+      "communication_bytes": 374861940,
+      "recovered": 95,
+      "rounds": 100,
+      "seed": 27
+    },
+    {
+      "accepted": 97,
+      "communication_bytes": 368247714,
+      "recovered": 97,
+      "rounds": 100,
+      "seed": 28
+    },
+    {
+      "accepted": 100,
+      "communication_bytes": 356121633,
+      "recovered": 100,
+      "rounds": 100,
+      "seed": 29
+    }
+  ],
+  "stress-replication-1-2": [
+    {
+      "accepted": 66,
+      "communication_bytes": 383604500,
+      "recovered": 66,
+      "rounds": 100,
+      "seed": 0
+    },
+    {
+      "accepted": 63,
+      "communication_bytes": 406751925,
+      "recovered": 63,
+      "rounds": 100,
+      "seed": 1
+    },
+    {
+      "accepted": 61,
+      "communication_bytes": 340616425,
+      "recovered": 61,
+      "rounds": 100,
+      "seed": 2
+    },
+    {
+      "accepted": 66,
+      "communication_bytes": 360457075,
+      "recovered": 66,
+      "rounds": 100,
+      "seed": 3
+    },
+    {
+      "accepted": 74,
+      "communication_bytes": 340616425,
+      "recovered": 74,
+      "rounds": 100,
+      "seed": 4
+    },
+    {
+      "accepted": 62,
+      "communication_bytes": 327389325,
+      "recovered": 62,
+      "rounds": 100,
+      "seed": 5
+    },
+    {
+      "accepted": 60,
+      "communication_bytes": 363763850,
+      "recovered": 60,
+      "rounds": 100,
+      "seed": 6
+    },
+    {
+      "accepted": 66,
+      "communication_bytes": 353843525,
+      "recovered": 66,
+      "rounds": 100,
+      "seed": 7
+    },
+    {
+      "accepted": 60,
+      "communication_bytes": 363763850,
+      "recovered": 60,
+      "rounds": 100,
+      "seed": 8
+    },
+    {
+      "accepted": 61,
+      "communication_bytes": 314162225,
+      "recovered": 61,
+      "rounds": 100,
+      "seed": 9
+    },
+    {
+      "accepted": 58,
+      "communication_bytes": 390218050,
+      "recovered": 58,
+      "rounds": 100,
+      "seed": 10
+    },
+    {
+      "accepted": 61,
+      "communication_bytes": 363763850,
+      "recovered": 61,
+      "rounds": 100,
+      "seed": 11
+    },
+    {
+      "accepted": 61,
+      "communication_bytes": 373684175,
+      "recovered": 61,
+      "rounds": 100,
+      "seed": 12
+    },
+    {
+      "accepted": 66,
+      "communication_bytes": 386911275,
+      "recovered": 66,
+      "rounds": 100,
+      "seed": 13
+    },
+    {
+      "accepted": 63,
+      "communication_bytes": 376990950,
+      "recovered": 63,
+      "rounds": 100,
+      "seed": 14
+    },
+    {
+      "accepted": 66,
+      "communication_bytes": 360457075,
+      "recovered": 66,
+      "rounds": 100,
+      "seed": 15
+    },
+    {
+      "accepted": 65,
+      "communication_bytes": 367070625,
+      "recovered": 65,
+      "rounds": 100,
+      "seed": 16
+    },
+    {
+      "accepted": 56,
+      "communication_bytes": 340616425,
+      "recovered": 56,
+      "rounds": 100,
+      "seed": 17
+    },
+    {
+      "accepted": 63,
+      "communication_bytes": 360457075,
+      "recovered": 63,
+      "rounds": 100,
+      "seed": 18
+    },
+    {
+      "accepted": 61,
+      "communication_bytes": 370377400,
+      "recovered": 61,
+      "rounds": 100,
+      "seed": 19
+    },
+    {
+      "accepted": 55,
+      "communication_bytes": 353843525,
+      "recovered": 55,
+      "rounds": 100,
+      "seed": 20
+    },
+    {
+      "accepted": 69,
+      "communication_bytes": 386911275,
+      "recovered": 69,
+      "rounds": 100,
+      "seed": 21
+    },
+    {
+      "accepted": 64,
+      "communication_bytes": 370377400,
+      "recovered": 64,
+      "rounds": 100,
+      "seed": 22
+    },
+    {
+      "accepted": 67,
+      "communication_bytes": 340616425,
+      "recovered": 67,
+      "rounds": 100,
+      "seed": 23
+    },
+    {
+      "accepted": 59,
+      "communication_bytes": 376990950,
+      "recovered": 59,
+      "rounds": 100,
+      "seed": 24
+    },
+    {
+      "accepted": 57,
+      "communication_bytes": 363763850,
+      "recovered": 57,
+      "rounds": 100,
+      "seed": 25
+    },
+    {
+      "accepted": 64,
+      "communication_bytes": 380297725,
+      "recovered": 64,
+      "rounds": 100,
+      "seed": 26
+    },
+    {
+      "accepted": 61,
+      "communication_bytes": 340616425,
+      "recovered": 61,
+      "rounds": 100,
+      "seed": 27
+    },
+    {
+      "accepted": 62,
+      "communication_bytes": 367070625,
+      "recovered": 62,
+      "rounds": 100,
+      "seed": 28
+    },
+    {
+      "accepted": 66,
+      "communication_bytes": 396831600,
+      "recovered": 66,
+      "rounds": 100,
+      "seed": 29
+    }
+  ],
+  "stress-rs-2-4": [
+    {
+      "accepted": 57,
+      "communication_bytes": 400177424,
+      "recovered": 57,
+      "rounds": 100,
+      "seed": 0
+    },
+    {
+      "accepted": 43,
+      "communication_bytes": 423326032,
+      "recovered": 43,
+      "rounds": 100,
+      "seed": 1
+    },
+    {
+      "accepted": 51,
+      "communication_bytes": 410098256,
+      "recovered": 51,
+      "rounds": 100,
+      "seed": 2
+    },
+    {
+      "accepted": 48,
+      "communication_bytes": 393563536,
+      "recovered": 48,
+      "rounds": 100,
+      "seed": 3
+    },
+    {
+      "accepted": 56,
+      "communication_bytes": 368761456,
+      "recovered": 56,
+      "rounds": 100,
+      "seed": 4
+    },
+    {
+      "accepted": 54,
+      "communication_bytes": 391910064,
+      "recovered": 54,
+      "rounds": 100,
+      "seed": 5
+    },
+    {
+      "accepted": 58,
+      "communication_bytes": 396870480,
+      "recovered": 58,
+      "rounds": 100,
+      "seed": 6
+    },
+    {
+      "accepted": 47,
+      "communication_bytes": 396870480,
+      "recovered": 47,
+      "rounds": 100,
+      "seed": 7
+    },
+    {
+      "accepted": 53,
+      "communication_bytes": 396870480,
+      "recovered": 53,
+      "rounds": 100,
+      "seed": 8
+    },
+    {
+      "accepted": 56,
+      "communication_bytes": 385296176,
+      "recovered": 56,
+      "rounds": 100,
+      "seed": 9
+    },
+    {
+      "accepted": 45,
+      "communication_bytes": 411751728,
+      "recovered": 45,
+      "rounds": 100,
+      "seed": 10
+    },
+    {
+      "accepted": 44,
+      "communication_bytes": 393563536,
+      "recovered": 44,
+      "rounds": 100,
+      "seed": 11
+    },
+    {
+      "accepted": 44,
+      "communication_bytes": 405137840,
+      "recovered": 44,
+      "rounds": 100,
+      "seed": 12
+    },
+    {
+      "accepted": 54,
+      "communication_bytes": 400177424,
+      "recovered": 54,
+      "rounds": 100,
+      "seed": 13
+    },
+    {
+      "accepted": 58,
+      "communication_bytes": 410098256,
+      "recovered": 58,
+      "rounds": 100,
+      "seed": 14
+    },
+    {
+      "accepted": 52,
+      "communication_bytes": 380335760,
+      "recovered": 52,
+      "rounds": 100,
+      "seed": 15
+    },
+    {
+      "accepted": 52,
+      "communication_bytes": 391910064,
+      "recovered": 52,
+      "rounds": 100,
+      "seed": 16
+    },
+    {
+      "accepted": 49,
+      "communication_bytes": 396870480,
+      "recovered": 49,
+      "rounds": 100,
+      "seed": 17
+    },
+    {
+      "accepted": 56,
+      "communication_bytes": 400177424,
+      "recovered": 56,
+      "rounds": 100,
+      "seed": 18
+    },
+    {
+      "accepted": 51,
+      "communication_bytes": 400177424,
+      "recovered": 51,
+      "rounds": 100,
+      "seed": 19
+    },
+    {
+      "accepted": 49,
+      "communication_bytes": 373721872,
+      "recovered": 49,
+      "rounds": 100,
+      "seed": 20
+    },
+    {
+      "accepted": 61,
+      "communication_bytes": 401830896,
+      "recovered": 61,
+      "rounds": 100,
+      "seed": 21
+    },
+    {
+      "accepted": 49,
+      "communication_bytes": 418365616,
+      "recovered": 49,
+      "rounds": 100,
+      "seed": 22
+    },
+    {
+      "accepted": 54,
+      "communication_bytes": 390256592,
+      "recovered": 54,
+      "rounds": 100,
+      "seed": 23
+    },
+    {
+      "accepted": 54,
+      "communication_bytes": 400177424,
+      "recovered": 54,
+      "rounds": 100,
+      "seed": 24
+    },
+    {
+      "accepted": 44,
+      "communication_bytes": 372068400,
+      "recovered": 44,
+      "rounds": 100,
+      "seed": 25
+    },
+    {
+      "accepted": 51,
+      "communication_bytes": 408444784,
+      "recovered": 51,
+      "rounds": 100,
+      "seed": 26
+    },
+    {
+      "accepted": 44,
+      "communication_bytes": 383642704,
+      "recovered": 44,
+      "rounds": 100,
+      "seed": 27
+    },
+    {
+      "accepted": 51,
+      "communication_bytes": 388603120,
+      "recovered": 51,
+      "rounds": 100,
+      "seed": 28
+    },
+    {
+      "accepted": 50,
+      "communication_bytes": 390256592,
+      "recovered": 50,
+      "rounds": 100,
+      "seed": 29
+    }
+  ],
+  "stress-rs-3-6": [
+    {
+      "accepted": 38,
+      "communication_bytes": 421161522,
+      "recovered": 38,
+      "rounds": 100,
+      "seed": 0
+    },
+    {
+      "accepted": 39,
+      "communication_bytes": 442106571,
+      "recovered": 39,
+      "rounds": 100,
+      "seed": 1
+    },
+    {
+      "accepted": 38,
+      "communication_bytes": 414547296,
+      "recovered": 38,
+      "rounds": 100,
+      "seed": 2
+    },
+    {
+      "accepted": 37,
+      "communication_bytes": 421161522,
+      "recovered": 37,
+      "rounds": 100,
+      "seed": 3
+    },
+    {
+      "accepted": 48,
+      "communication_bytes": 403523586,
+      "recovered": 48,
+      "rounds": 100,
+      "seed": 4
+    },
+    {
+      "accepted": 40,
+      "communication_bytes": 414547296,
+      "recovered": 40,
+      "rounds": 100,
+      "seed": 5
+    },
+    {
+      "accepted": 47,
+      "communication_bytes": 409035441,
+      "recovered": 47,
+      "rounds": 100,
+      "seed": 6
+    },
+    {
+      "accepted": 42,
+      "communication_bytes": 405728328,
+      "recovered": 42,
+      "rounds": 100,
+      "seed": 7
+    },
+    {
+      "accepted": 46,
+      "communication_bytes": 406830699,
+      "recovered": 46,
+      "rounds": 100,
+      "seed": 8
+    },
+    {
+      "accepted": 47,
+      "communication_bytes": 400216473,
+      "recovered": 47,
+      "rounds": 100,
+      "seed": 9
+    },
+    {
+      "accepted": 46,
+      "communication_bytes": 421161522,
+      "recovered": 46,
+      "rounds": 100,
+      "seed": 10
+    },
+    {
+      "accepted": 38,
+      "communication_bytes": 410137812,
+      "recovered": 38,
+      "rounds": 100,
+      "seed": 11
+    },
+    {
+      "accepted": 42,
+      "communication_bytes": 422263893,
+      "recovered": 42,
+      "rounds": 100,
+      "seed": 12
+    },
+    {
+      "accepted": 46,
+      "communication_bytes": 418956780,
+      "recovered": 46,
+      "rounds": 100,
+      "seed": 13
+    },
+    {
+      "accepted": 50,
+      "communication_bytes": 411240183,
+      "recovered": 50,
+      "rounds": 100,
+      "seed": 14
+    },
+    {
+      "accepted": 43,
+      "communication_bytes": 388090392,
+      "recovered": 43,
+      "rounds": 100,
+      "seed": 15
+    },
+    {
+      "accepted": 47,
+      "communication_bytes": 404625957,
+      "recovered": 47,
+      "rounds": 100,
+      "seed": 16
+    },
+    {
+      "accepted": 33,
+      "communication_bytes": 411240183,
+      "recovered": 33,
+      "rounds": 100,
+      "seed": 17
+    },
+    {
+      "accepted": 44,
+      "communication_bytes": 404625957,
+      "recovered": 44,
+      "rounds": 100,
+      "seed": 18
+    },
+    {
+      "accepted": 44,
+      "communication_bytes": 412342554,
+      "recovered": 44,
+      "rounds": 100,
+      "seed": 19
+    },
+    {
+      "accepted": 41,
+      "communication_bytes": 389192763,
+      "recovered": 41,
+      "rounds": 100,
+      "seed": 20
+    },
+    {
+      "accepted": 51,
+      "communication_bytes": 423366264,
+      "recovered": 51,
+      "rounds": 100,
+      "seed": 21
+    },
+    {
+      "accepted": 45,
+      "communication_bytes": 413444925,
+      "recovered": 45,
+      "rounds": 100,
+      "seed": 22
+    },
+    {
+      "accepted": 46,
+      "communication_bytes": 406830699,
+      "recovered": 46,
+      "rounds": 100,
+      "seed": 23
+    },
+    {
+      "accepted": 45,
+      "communication_bytes": 416752038,
+      "recovered": 45,
+      "rounds": 100,
+      "seed": 24
+    },
+    {
+      "accepted": 38,
+      "communication_bytes": 401318844,
+      "recovered": 38,
+      "rounds": 100,
+      "seed": 25
+    },
+    {
+      "accepted": 39,
+      "communication_bytes": 434389974,
+      "recovered": 39,
+      "rounds": 100,
+      "seed": 26
+    },
+    {
+      "accepted": 37,
+      "communication_bytes": 403523586,
+      "recovered": 37,
+      "rounds": 100,
+      "seed": 27
+    },
+    {
+      "accepted": 37,
+      "communication_bytes": 404625957,
+      "recovered": 37,
+      "rounds": 100,
+      "seed": 28
+    },
+    {
+      "accepted": 37,
+      "communication_bytes": 412342554,
+      "recovered": 37,
+      "rounds": 100,
+      "seed": 29
+    }
+  ]
+}

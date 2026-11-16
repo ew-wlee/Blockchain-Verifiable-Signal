@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "recovered_hashes": {
+    "backtest_summary.json": "d1426eb2504b8cebb4f83fdedebcad14cefbad432b8dddda13b4ac5f7dd61cf4",
+    "config.json": "fa70f2fb68fd6463fca5a921f8ce47e54d5b331e197658d751e0a1cb6de9379e",
+    "dataset.csv": "afcbcf10e2a437685b6ea24b79d7f0081140972ab7b81bf01d87a9761cb7b268",
+    "manifest.json": "3f3fa32d9c98ba929c9e002f0d9e6c35ec46b42a36344c64bdb8426257870ca6",
+    "model_reference.json": "014a30523241a9ae3f7296da7ce17ce776448015634f5f564350b9318249dd3f",
+    "signals.csv": "e37544ef6b88c44577bf8efffc2d956740f513a4c6c4697bd677029db3d6f4fa"
+  },
+  "source_hashes": {
+    "backtest_summary.json": "d1426eb2504b8cebb4f83fdedebcad14cefbad432b8dddda13b4ac5f7dd61cf4",
+    "config.json": "fa70f2fb68fd6463fca5a921f8ce47e54d5b331e197658d751e0a1cb6de9379e",
+    "dataset.csv": "afcbcf10e2a437685b6ea24b79d7f0081140972ab7b81bf01d87a9761cb7b268",
+    "manifest.json": "3f3fa32d9c98ba929c9e002f0d9e6c35ec46b42a36344c64bdb8426257870ca6",
+    "model_reference.json": "014a30523241a9ae3f7296da7ce17ce776448015634f5f564350b9318249dd3f",
+    "signals.csv": "e37544ef6b88c44577bf8efffc2d956740f513a4c6c4697bd677029db3d6f4fa"
+  }
+}

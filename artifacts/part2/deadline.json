@@ -1,0 +1,88 @@
+{
+  "accepted": false,
+  "anchor_mode": "offline_snapshot_not_live_rpc",
+  "communication_bytes": 3307671,
+  "completion_time": null,
+  "config_id": "rs-3-6",
+  "contract_address": "0x7BA4b62c97Ce9567075736f7cffAEFafAC8C4E41",
+  "corrupted_data_acceptance_count": 0,
+  "deadline_ms": 250.0,
+  "environment": {
+    "deadline_ms": 250.0,
+    "failure": 0.1,
+    "invalid": 0.1,
+    "latency_median_ms": 50.0,
+    "latency_sigma": 0.5,
+    "validator_ms": 1.0
+  },
+  "events": [
+    {
+      "index": 1,
+      "latency_ms": 30.0,
+      "node": 1,
+      "reason": "fragment_hash_mismatch"
+    },
+    {
+      "index": 2,
+      "latency_ms": 40.0,
+      "node": 2,
+      "reason": "valid"
+    },
+    {
+      "index": 3,
+      "latency_ms": 50.0,
+      "node": 3,
+      "reason": "valid"
+    },
+    {
+      "node": 4,
+      "reason": "deadline"
+    },
+    {
+      "node": 5,
+      "reason": "deadline"
+    }
+  ],
+  "evidence_bytes": 507,
+  "explorer": {
+    "contract": "https://sepolia.etherscan.io/address/0x7BA4b62c97Ce9567075736f7cffAEFafAC8C4E41",
+    "deployment_tx": "https://sepolia.etherscan.io/tx/0x4a05fefe27d1d431113318f94f0fa080ebc8c674226bcd3ae449adad589a5f90",
+    "registration_tx": "https://sepolia.etherscan.io/tx/0x742eecdd2cffcbd74fe32b61ec0ee3fff48c29d4163d998afe86af8bff5c5e51"
+  },
+  "failure_reason": "deadline",
+  "fragment_count": 6,
+  "hash_match": false,
+  "k": 3,
+  "n": 6,
+  "node_states": [],
+  "object_id": "0x1143b163d9a56e29e5714b7cd7ca41c6d05353ceb903704316219060915a4d07",
+  "payload_commitment": null,
+  "payload_sha256": "38b39c1da8e318cdd8db0e4b05e69f689c58b08918a1582c8b8b7a739ddc47fc",
+  "reconstructed_manifest_hash": null,
+  "reconstructed_sha256": null,
+  "recovered": false,
+  "registration_tx": "0x742eecdd2cffcbd74fe32b61ec0ee3fff48c29d4163d998afe86af8bff5c5e51",
+  "request_bytes": 558,
+  "requested_fragments": 6,
+  "response_bytes": 3306606,
+  "round": 0,
+  "run_id": "offline-demo",
+  "scheme": "rs",
+  "seed": 0,
+  "silent_nodes": [
+    0
+  ],
+  "storage_bytes": 6613212,
+  "storage_overhead": 2.0,
+  "time_unit": "ms",
+  "valid_fragments": 2,
+  "valid_indices": [
+    2,
+    3
+  ],
+  "votes": [
+    "REJECT",
+    "REJECT",
+    "REJECT"
+  ]
+}

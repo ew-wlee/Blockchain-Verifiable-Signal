@@ -1,0 +1,125 @@
+{
+  "results_match": true,
+  "checks": {
+    "schema_version": "step2-backtest-checks-v1",
+    "checks": [
+      {
+        "name": "signal_count_matches_frozen_splits",
+        "passed": true,
+        "details": {
+          "signals": 8832,
+          "expected": 8832
+        }
+      },
+      {
+        "name": "validation_and_test_are_separate",
+        "passed": true,
+        "details": {
+          "validation": {
+            "buy": 1077,
+            "hold": 2208,
+            "sell": 1131
+          },
+          "test": {
+            "buy": 1042,
+            "hold": 2220,
+            "sell": 1154
+          }
+        }
+      },
+      {
+        "name": "signal_executes_in_same_target_bar",
+        "passed": true,
+        "details": "t signal from t-1h context, executed at t open"
+      },
+      {
+        "name": "hourly_signal_continuity",
+        "passed": true,
+        "details": "all split/symbol timestamps checked for hourly continuity"
+      },
+      {
+        "name": "long_only_positions",
+        "passed": true,
+        "details": "positions restricted to 0 or 1"
+      },
+      {
+        "name": "ten_bps_charged_only_on_position_change",
+        "passed": true,
+        "details": {
+          "fee_bps": 10
+        }
+      },
+      {
+        "name": "frozen_tau_not_reselected",
+        "passed": true,
+        "details": {
+          "tau": "0.001923089035"
+        }
+      }
+    ],
+    "passed": true,
+    "summary_sha256_note": "computed from final backtest_summary.json bytes"
+  },
+  "results": {
+    "validation": {
+      "BTCUSDT": {
+        "periods": 2208,
+        "trade_count": 530,
+        "cost_paid": "0.530000000000",
+        "cumulative_return": "-0.336939186271",
+        "buy_hold_return": "0.008850760076",
+        "max_drawdown": "0.354608595189",
+        "final_position": 0,
+        "exposure_hours": 1058,
+        "average_position": "0.479166666667",
+        "positive_periods": 514,
+        "first_signal_timestamp_utc": "2024-07-01T00:00:00Z",
+        "last_signal_timestamp_utc": "2024-09-30T23:00:00Z"
+      },
+      "ETHUSDT": {
+        "periods": 2208,
+        "trade_count": 526,
+        "cost_paid": "0.526000000000",
+        "cumulative_return": "-0.518718985339",
+        "buy_hold_return": "-0.243132954836",
+        "max_drawdown": "0.522197548625",
+        "final_position": 0,
+        "exposure_hours": 1075,
+        "average_position": "0.486865942029",
+        "positive_periods": 512,
+        "first_signal_timestamp_utc": "2024-07-01T00:00:00Z",
+        "last_signal_timestamp_utc": "2024-09-30T23:00:00Z"
+      }
+    },
+    "test": {
+      "BTCUSDT": {
+        "periods": 2208,
+        "trade_count": 513,
+        "cost_paid": "0.513000000000",
+        "cumulative_return": "-0.170793252274",
+        "buy_hold_return": "0.477649555644",
+        "max_drawdown": "0.188659484645",
+        "final_position": 1,
+        "exposure_hours": 1079,
+        "average_position": "0.488677536232",
+        "positive_periods": 553,
+        "first_signal_timestamp_utc": "2024-10-01T00:00:00Z",
+        "last_signal_timestamp_utc": "2024-12-31T23:00:00Z"
+      },
+      "ETHUSDT": {
+        "periods": 2208,
+        "trade_count": 542,
+        "cost_paid": "0.542000000000",
+        "cumulative_return": "-0.357340817763",
+        "buy_hold_return": "0.282656480571",
+        "max_drawdown": "0.370162906057",
+        "final_position": 0,
+        "exposure_hours": 1031,
+        "average_position": "0.466938405797",
+        "positive_periods": 522,
+        "first_signal_timestamp_utc": "2024-10-01T00:00:00Z",
+        "last_signal_timestamp_utc": "2024-12-31T23:00:00Z"
+      }
+    }
+  }
+}

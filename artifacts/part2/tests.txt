@@ -1,0 +1,18 @@
+test_all_threshold_subsets (test_retrieval.CodecTests.test_all_threshold_subsets) ... ok
+test_bad_parameters (test_retrieval.CodecTests.test_bad_parameters) ... ok
+test_known_gf_vector (test_retrieval.CodecTests.test_known_gf_vector) ... ok
+test_actual_bundle_every_threshold_subset (test_retrieval.RetrievalTests.test_actual_bundle_every_threshold_subset) ... ok
+test_anchor_and_archive_tampering (test_retrieval.RetrievalTests.test_anchor_and_archive_tampering) ... ok
+test_deadline_and_validation_budget (test_retrieval.RetrievalTests.test_deadline_and_validation_budget) ... ok
+test_demo_deterministic (test_retrieval.RetrievalTests.test_demo_deterministic) ... ok
+test_forged_hash_metadata_cannot_bypass_anchor (test_retrieval.RetrievalTests.test_forged_hash_metadata_cannot_bypass_anchor) ... ok
+test_insufficient_and_duplicate (test_retrieval.RetrievalTests.test_insufficient_and_duplicate) ... ok
+test_replication_and_storage (test_retrieval.RetrievalTests.test_replication_and_storage) ... ok
+test_seeded_round_and_offline (test_retrieval.RetrievalTests.test_seeded_round_and_offline) ... ok
+test_two_of_three_and_independent_checks (test_retrieval.RetrievalTests.test_two_of_three_and_independent_checks) ... ok
+test_wrong_object_index_corrupt_and_silent (test_retrieval.RetrievalTests.test_wrong_object_index_corrupt_and_silent) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 1.863s
+
+OK
